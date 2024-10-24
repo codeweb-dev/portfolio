@@ -1,0 +1,50 @@
+ .animate-fade-in {
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+ }
+
+ .animate-fade-in-active {
+   opacity: 1;
+ }
+
+ .animate-fade-out {
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+ }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(270deg, #34d399, #0f766e, #22c55e, #0f766e);
+  /* Additional gradient color for complexity */
+  background-size: 400% 400%;
+  /* Make the gradient larger to enable animation */
+  background-clip: text;
+  /* Clip the background to the text */
+  -webkit-background-clip: text;
+  /* For Safari */
+  color: transparent;
+  /* Make the text color transparent */
+  animation: gradientAnimation 4s ease infinite;
+  /* Animation settings */
+}

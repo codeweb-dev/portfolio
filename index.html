@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllenDev ⋅ Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#111111] text-white font-['Poppins']">
+    <div class="p-5 max-w-6xl mx-auto">
+      <header
+        class="fixed max-w-6xl mx-auto inset-x-0 top-0 z-50 backdrop-blur-md"
+      >
+        <nav class="flex items-center justify-between py-4 px-6">
+          <div>
+            <a href="#" class="font-bold">
+              <p class=""><i class="fa-solid fa-terminal mr-3"></i>AllenDev</p>
+            </a>
+          </div>
+          <div class="flex items-center gap-3">
+            <a
+              href="#home-section"
+              class="text-sm font-semibold leading-6 text-white"
+              >Home</a
+            >
+            <a
+              href="#work-section"
+              class="text-sm font-semibold leading-6 text-white"
+              >Work</a
+            >
+            <a
+              href="#skill-section"
+              class="text-sm font-semibold leading-6 text-white"
+              >Skill</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <div
+        class="min-h-screen pt-20 flex flex-col justify-between animate-fade-in md:mt-12 relative"
+        id="home-section"
+      >
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-[30rem] sm:-left-[40rem]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-emerald-500 to-emerald-800 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+        <div
+          x-data="{ isVisible: false }"
+          x-init="setTimeout(() => { isVisible = true }, 100)"
+          class="flex flex-col gap-1 md:max-w-2xl"
+        >
+          <div
+            x-show="isVisible"
+            x-transition:enter="transition-transform duration-700 ease-out"
+            x-transition:enter-start="-translate-x-full"
+            x-transition:enter-end="translate-x-0"
+            style="transition-delay: 0ms"
+          >
+            <p class="font-bold mb-1">Hello there 👋</p>
+          </div>
+          <div
+            x-show="isVisible"
+            x-transition:enter="transition-transform duration-700 ease-out"
+            x-transition:enter-start="-translate-x-full"
+            x-transition:enter-end="translate-x-0"
+            style="transition-delay: 200ms"
+          >
+            <h1 class="text-4xl md:text-6xl font-bold">
+              I'm
+              <span class="gradient-text">Allen</span>
+              Labrague,
+            </h1>
+          </div>
+          <div
+            x-show="isVisible"
+            x-transition:enter="transition-transform duration-700 ease-out"
+            x-transition:enter-start="-translate-x-full"
+            x-transition:enter-end="translate-x-0"
+            style="transition-delay: 400ms"
+          >
+            <p class="text-sm md:text-base text-gray-300 mt-2">
+              A
+              <span class="text-white font-bold">Full Stack Developer</span>
+              (TALL - Tailwind, AlpineJs, Livewire, Laravel) stack who loves
+              intuitive, clean and modern UI design.
+            </p>
+          </div>
+          <div
+            class="mt-10 flex gap-3"
+            x-show="isVisible"
+            x-transition:enter="transition-transform duration-700 ease-out"
+            x-transition:enter-start="-translate-x-full"
+            x-transition:enter-end="translate-x-0"
+            style="transition-delay: 600ms"
+          >
+            <a
+              href="https://allen-portfolio.vercel.app/"
+              target="_blank"
+              class="ml-1 text-black font-bold"
+            >
+              <button
+                class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-white text-black shadow hover:bg-white/90 h-9 px-4 py-2 max-w-44 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2"
+              >
+                <span
+                  class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-black opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-20"
+                ></span>
+                <p class="text-center font-bold">Visit my old portfolio</p>
+              </button></a
+            >
+            <a
+              class="rounded-md py-2 px-4 text-gray-300 font-bold hover:text-white transition-all cursor-pointer"
+              href="https://www.facebook.com/allen.labrague.75"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook mr-2"></i>Facebook
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col gap-1 pb-40"
+          x-data="{ isVisible: false }"
+          x-init="setTimeout(() => { isVisible = true }, 100)"
+        >
+          <p class="text-white text-sm text-gray-300">
+            Current favorite tech stack/tools
+          </p>
+          <div
+            class="w-[2.2rem] h-[2.2rem] flex items-center gap-3 mt-1"
+            x-data="{ isVisible: false }"
+            x-init="setTimeout(() => { isVisible = true }, 100)"
+          >
+            <img
+              src="images/tailwind-icon.svg"
+              class="bg-white p-1 rounded-full"
+              alt="tailwind-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 0ms"
+            />
+            <img
+              src="images/alpinejs-iconn.png"
+              class="bg-white p-1 rounded-full"
+              alt="alpinejs-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 200ms"
+            />
+            <img
+              src="images/laravel-iconn.png"
+              class="bg-white p-1 rounded-full"
+              alt="laravel-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 400ms"
+            />
+            <img
+              src="images/livewire-icon.webp"
+              class="bg-white p-1 rounded-full hover:opacity-80 transition-all"
+              alt="livewire-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 600ms"
+            />
+            <div class="pb-1 border h-[1rem] border-gray-500"></div>
+            <img
+              src="images/vscode-icon.png"
+              class="bg-white p-1 rounded-full hover:opacity-80 transition-all"
+              alt="vscode-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 800ms"
+            />
+            <img
+              src="images/figma-icon.svg"
+              class="bg-white p-1 rounded-full hover:opacity-80 transition-all"
+              alt="figma-icon"
+              x-show="isVisible"
+              x-transition:enter="transition-transform transition-opacity duration-700 ease-out"
+              x-transition:enter-start="translate-y-full opacity-0"
+              x-transition:enter-end="translate-y-0 opacity-100"
+              style="transition-delay: 1000ms"
+            />
+          </div>
+        </div>
+
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-emerald-500 to-emerald-800 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+      </div>
+
+      <div id="work-section" class="animate-fade-in">
+        <h2 class="text-white text-center text-3xl font-bold pt-20 md:text-5xl">
+          My
+          <span class="gradient-text"> Creative </span>
+          Portfolio
+        </h2>
+
+        <div
+          class="pt-20 flex flex-col md:flex-row gap-32 items-center justify-center"
+        >
+          <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-1 items-center">
+              <h3 class="text-2xl font-bold">VitalLink</h3>
+              <p class="text-gray-300 text-sm text-justify max-w-4xl">
+                VitalLink simplifies patient care by managing appointments,
+                medical records, and provider-patient communication, with an
+                admin dashboard for efficient management.
+              </p>
+            </div>
+
+            <div
+              x-data="{ playing: false }"
+              class="relative group mt-3 max-w-4xl"
+            >
+              <video
+                x-ref="video"
+                src="/videos/2024-09-24 20-57-52.mkv"
+                muted
+                class="rounded-lg shadow-lg"
+              ></video>
+
+              <button
+                @click="playing = !playing; playing ? $refs.video.play() : $refs.video.pause()"
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-opacity"
+              >
+                <i x-show="!playing" class="fa-solid fa-play text-3xl"></i>
+                <i x-show="playing" class="fa-solid fa-pause text-3xl"></i>
+              </button>
+
+              <button
+                @click="$refs.video.requestFullscreen()"
+                class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white p-2 rounded hover:bg-opacity-70 transition px-4 rounded-full"
+              >
+                <i class="fa-solid fa-expand text-lg"></i>
+              </button>
+            </div>
+            <div class="text-sm text-gray-400">
+              <p class="text-center">
+                Click the <i class="fa-solid fa-expand text-lg mx-1"></i> for
+                better quality
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-1 items-center">
+              <h3 class="text-2xl font-bold">Bubblebrews</h3>
+              <p class="text-gray-300 text-sm max-w-4xl">
+                Bubblebrews is a coffee shop project featuring an admin
+                dashboard for managing operations.
+              </p>
+            </div>
+
+            <div
+              x-data="{ playing: false }"
+              class="relative group mt-3 max-w-4xl"
+            >
+              <video
+                x-ref="video"
+                src="/videos/bubblebrews.mkv"
+                muted
+                class="rounded-lg shadow-lg"
+              ></video>
+
+              <button
+                @click="playing = !playing; playing ? $refs.video.play() : $refs.video.pause()"
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-opacity"
+              >
+                <i x-show="!playing" class="fa-solid fa-play text-3xl"></i>
+                <i x-show="playing" class="fa-solid fa-pause text-3xl"></i>
+              </button>
+
+              <button
+                @click="$refs.video.requestFullscreen()"
+                class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white p-2 rounded hover:bg-opacity-70 transition px-4 rounded-full"
+              >
+                <i class="fa-solid fa-expand text-lg"></i>
+              </button>
+            </div>
+            <div class="text-sm text-gray-400">
+              <p class="text-center">
+                Click the <i class="fa-solid fa-expand text-lg mx-1"></i> for
+                better quality
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skill-section" class="flex flex-col animate-fade-in">
+        <h2 class="text-white text-center text-3xl font-bold pt-20 md:text-5xl">
+          My
+          <span class="gradient-text">Skills</span>
+        </h2>
+        <div class="pt-20 flex flex-col gap-8">
+          <div>
+            <h2 class="text-xl font-bold mb-4">Programming Languages</h2>
+            <div class="flex flex-wrap gap-2 text-black">
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >C</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >C++</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Java</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Python</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Javascript</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >PHP</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >SQL</span
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Console Base</h2>
+            <div class="flex flex-wrap gap-2 text-black">
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >C</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >C++</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Java</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Python</span
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Website</h2>
+            <div class="flex flex-wrap gap-2 text-black">
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Javascript</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >PHP (Laravel)</span
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Technologies</h2>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Tailwind CSS</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Laravel</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Mary UI</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 px-3 py-1 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 px-3 py-1 rounded-full"
+                >Livewire</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 px-3 py-1 rounded-full"
+                >Alpine.js</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 px-3 py-1 rounded-full"
+                >Mysql</span
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Softwares and Tools</h2>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >VS Code</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Git</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 text-white px-3 py-1 rounded-full"
+                >Github</span
+              >
+              <span
+                class="bg-transparent border border-zinc-800 px-3 py-1 rounded-full"
+                >Figma</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="py-10 flex items-center justify-between text-sm my-12 border-t border-zinc-800"
+      >
+        <div>
+          Created by
+          <span class="gradient-text">AllenDev</span>
+        </div>
+        <div>
+          Inspired By
+          <span class="gradient-text"> Enji Kusnadi </span>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</html>
