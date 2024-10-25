@@ -289,16 +289,27 @@
             </div>
 
             <div
-              x-data="{ playing: false }"
+              x-data="{ playing: false, loading: true }"
               class="relative group mt-3 max-w-4xl"
             >
+              <!-- Loading Text -->
+              <div
+                x-show="loading"
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white"
+              >
+                Loading...
+              </div>
+
+              <!-- Video Element -->
               <video
                 x-ref="video"
                 src="videos/2024-09-24 20-57-52.mkv"
                 muted
                 class="rounded-lg shadow-lg"
+                @loadeddata="loading = false"
               ></video>
 
+              <!-- Play/Pause Button -->
               <button
                 @click="playing = !playing; playing ? $refs.video.play() : $refs.video.pause()"
                 class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-opacity"
@@ -307,6 +318,7 @@
                 <i x-show="playing" class="fa-solid fa-pause text-3xl"></i>
               </button>
 
+              <!-- Fullscreen Button -->
               <button
                 @click="$refs.video.requestFullscreen()"
                 class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white p-2 rounded hover:bg-opacity-70 transition px-4 rounded-full"
@@ -314,6 +326,7 @@
                 <i class="fa-solid fa-expand text-lg"></i>
               </button>
             </div>
+
             <div class="text-sm text-gray-400">
               <p class="text-center">
                 Click the <i class="fa-solid fa-expand text-lg mx-1"></i> for
@@ -332,16 +345,27 @@
             </div>
 
             <div
-              x-data="{ playing: false }"
+              x-data="{ playing: false, loading: true }"
               class="relative group mt-3 max-w-4xl"
             >
+              <!-- Loading Text -->
+              <div
+                x-show="loading"
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white"
+              >
+                Loading...
+              </div>
+
+              <!-- Video Element -->
               <video
                 x-ref="video"
                 src="videos/bubblebrews.mkv"
                 muted
                 class="rounded-lg shadow-lg"
+                @loadeddata="loading = false"
               ></video>
 
+              <!-- Play/Pause Button -->
               <button
                 @click="playing = !playing; playing ? $refs.video.play() : $refs.video.pause()"
                 class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-opacity"
@@ -350,6 +374,7 @@
                 <i x-show="playing" class="fa-solid fa-pause text-3xl"></i>
               </button>
 
+              <!-- Fullscreen Button -->
               <button
                 @click="$refs.video.requestFullscreen()"
                 class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white p-2 rounded hover:bg-opacity-70 transition px-4 rounded-full"
@@ -357,6 +382,7 @@
                 <i class="fa-solid fa-expand text-lg"></i>
               </button>
             </div>
+
             <div class="text-sm text-gray-400">
               <p class="text-center">
                 Click the <i class="fa-solid fa-expand text-lg mx-1"></i> for
